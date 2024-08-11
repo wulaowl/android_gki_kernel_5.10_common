@@ -16,14 +16,14 @@ jobs:
       uses: dabao1955/kernel_build_action@main
       with:
           kernel-url: https://github.com/wulaowl/android_gki_kernel_5.10_common
-          kernel-dir: 5.10.222
+          kernel-dir: 12su
           kernel-branch: android12-5.10
           config: gki_defconfig
           arch: ARM64
           aosp-gcc: true
           aosp-clang: true
-          android-version: 12
-          aosp-clang-version: r416183b1
+          android-version: 14
+          aosp-clang-version: r487747c
           python-27: true
           disable-lto: true
           anykernel3: true
