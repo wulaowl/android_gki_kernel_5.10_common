@@ -10,20 +10,21 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      runs-on: ubuntu-22.02.04LTB
 
     steps:
     - name: Build Kernel
       uses: dabao1955/kernel_build_action@main
       with:
           kernel-url: https://github.com/wulaowl/android_gki_kernel_5.10_common
-          kernel-dir: wulao5.10.222
+          kernel-dir: 5.10.222
           kernel-branch: android12-5.10
           config: gki_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          android-version: 14
-          aosp-clang-version: r487747c
+          android-version: 12
+          aosp-clang-version: r383902
           python-27: true
           disable-lto: true
           anykernel3: true
